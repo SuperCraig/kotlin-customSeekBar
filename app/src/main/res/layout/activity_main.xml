@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtDefStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Default Style: "
+        android:textSize="20sp"
+        android:textColor="#FFFF"/>
+
+
+    <com.example.lib.TransParencySeekBar
+        android:id="@+id/defStyle"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        app:tb_maxProgress="300"
+        app:tb_progress="150"
+        app:tb_text="0"
+        app:tb_textSize="40"
+        app:tb_textBackgroundColor="#000000"
+        app:tb_textColor="#FF9800"
+        app:tb_thumbClickable="false" />
+
+    <TextView
+        android:id="@+id/txtClickableStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Clickable Style: "
+        android:textColor="#FFFF"
+        android:textSize="20sp" />
+
+    <com.example.lib.TransParencySeekBar
+        android:id="@+id/clickableStyle"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        app:tb_maxProgress="200"
+        app:tb_progress="150"
+        app:tb_text="0"
+        app:tb_textSize="40"
+        app:tb_textBackgroundColor="#000000"
+        app:tb_textColor="#FF9800"
+        app:tb_thumbClickable="true" />
+</LinearLayout>
